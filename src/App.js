@@ -1,16 +1,12 @@
-import "./App.css";
-import ExpenseTracker from "./components/ExpenseTracker";
-import RecentTransaction from "./components/Transaction";
-import TopExpenses from "./components/TopExpenses";
+/* eslint-disable no-unused-vars */
+import LandingPage from "./components/pages/LandingPage";
+import { SnackbarProvider } from "notistack";
+
 function App() {
   return (
-    <div className="App">
-      <ExpenseTracker />
-      <div style={{ display: "flex", gap: "24px" }}>
-        <RecentTransaction />
-        <TopExpenses />
-      </div>
-    </div>
+    <SnackbarProvider>
+      <LandingPage />
+    </SnackbarProvider>
   );
 }
 
