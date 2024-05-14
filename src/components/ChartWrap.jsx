@@ -2,8 +2,8 @@ import React from "react";
 import { PieChart, Pie, Cell } from "recharts";
 import styles from "./ChartWrap.module.css";
 const data = [
-  { name: "Food", value: 70, color: "#FF9304" },
-  { name: "Entertainment", value: 30, color: "#A000FF" },
+  { name: "Entertainment", value: 70, color: "#FF9304" },
+  { name: "Food", value: 30, color: "#A000FF" },
   { name: "Travel", value: 10, color: "#FDE006" },
 ];
 
@@ -37,14 +37,14 @@ const renderCustomizedLabel = ({
 export default function PieChartComponent() {
   return (
     <>
-      <PieChart width={400} height={400}>
+      <PieChart width={200} height={200}>
         <Pie
           data={data}
-          cx={200}
-          cy={200}
+          cx={100}
+          cy={100}
           labelLine={false}
           label={renderCustomizedLabel}
-          outerRadius={150}
+          outerRadius={80}
           fill="#8884d8"
           dataKey="value"
         >

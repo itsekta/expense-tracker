@@ -7,17 +7,33 @@ function ExpenseTracker() {
         <h1>Expense Tracker</h1>
         <div className={style.expenseCard}>
           <div className={style.walletCard}>
-            <div>
-              Wallet Balance: <span>&#8377;5000</span>
-              <div>
-                <button className={style.button}>+ Add Income</button>
-              </div>
+            <div className={style.label}>
+              Wallet Balance:{" "}
+              <span className={style.price} style={{ color: "#9DFF5B" }}>
+                &#8377;5000
+              </span>
+            </div>
+            <div style={{ marginTop: "20px" }}>
+              <button className={style.button}>+ Add Income</button>
             </div>
           </div>
           <div className={style.expenseInfo}>
-            Expenses: <span>&#8377;500</span>
-            <div>
-              <button className={style.button}>+ Add Expense</button>
+            <div className={style.label}>
+              Expenses:{" "}
+              <span className={style.price} style={{ color: "#F4BB4A" }}>
+                &#8377;500
+              </span>
+            </div>
+            <div style={{ marginTop: "20px" }}>
+              <button
+                className={style.button}
+                style={{
+                  background:
+                    "linear-gradient(90deg, #FF9595 0%, #FF4747 80%, #FF3838 100%)",
+                }}
+              >
+                + Add Expense
+              </button>
             </div>
           </div>
           <div className="chart">
